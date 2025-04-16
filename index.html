@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -11,12 +13,12 @@
             <img src="assets/img/logo.svg" alt="#">
         </a>
         <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Contact</a></li>
+            <ul class="nav-items">
+                <li class="nav-links"><a href="">Home</a></li>
+                <li class="nav-links"><a href="">About</a></li>
+                <li class="nav-links"><a href="">Services</a></li>
+                <li class="nav-links"><a href="">Pricing</a></li>
+                <li class="nav-links"><a href="">Contact</a></li>
             </ul>
         </nav>
         <div class="nav-btns">
@@ -32,11 +34,15 @@
                     <h1>It's a Big World Out There,Go Explore</h1>
                 <p>We always make our customer happy by providing best as many choice as possible</p>
                 <div class="hero-btns">
-                    <button>Plan a Trip</button>
-                    <div>
-                        <span><img src="assets/img/hero-button-img.jpg" alt=""></span>
-                        <button>Watch our Story</button>
+                    <button class="plan-btn">Plan a Trip</button>
+                    <div class="story-btn-container" >
+                        <span class="story-btn-span">
+                            <img src="assets/img/hero-button-img.jpg" alt="">
+                             <span class="story-btn-icon-container"> <i class="fa-solid fa-play"></i> </span>
+                            </span>
+                       
                     </div>
+                    <button class="story-btn">Watch our Story</button>
                 </div>
                 </div>
                 <img src="assets/img/hero-banner.png" alt="">
