@@ -100,6 +100,18 @@ section{
 }
 
 
+/* ======================
+   ANIMATIONS
+   ====================== */
+
+@keyframes CardTwist{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 header{
     position: relative;
     max-width: 1200px;
@@ -333,8 +345,18 @@ header{
 
 .destination-card{
     border-radius: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation:  CardTwist 0.6s ease forwards;
 }
 
+
+.destination-card:nth-child(1) { animation-delay: 0.3s; }
+.destination-card:nth-child(2) { animation-delay: 0.4s; }
+.destination-card:nth-child(3) { animation-delay: 0.5s; }
+.destination-card:nth-child(4) { animation-delay: 0.6s; }
+.destination-card:nth-child(5) { animation-delay: 0.7s; }
+.destination-card:nth-child(6) { animation-delay: 0.8s; }
 
 .destination-img-container{
     position: relative;
@@ -383,9 +405,69 @@ header{
 }
 
 
+/* Destination Ends*/
+
+/*Experiences*/
+.experience-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.experience-img-container{
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+.experience-img-container .experience-svg{
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    transform: translate(50%,10%);
+}
 
 
+.experince-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+}
 
+.experince-text > p:first-child{
+    color: var(--text-majorelle-blue);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.experince-text  h1{
+    font-size: 3rem;
+}
+
+.experince-text >p:nth-last-child(2){
+    
+    font-weight: 500;
+  
+}
+
+.experience-info{
+    display: flex;
+    gap: 20px;
+}
+
+.experience-info span {
+    padding: 0.5rem;
+}
+.experience-info span p{
+    color: var(--text-majorelle-blue);
+    font-size:2.5rem;
+    font-weight: bold;
+}
 
 @media (max-width: 575.98px) { 
     
